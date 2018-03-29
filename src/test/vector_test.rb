@@ -12,4 +12,13 @@ class TestVector < Test::Unit::TestCase
     assert_equal(1, w.x)
     assert_equal(2, w.y)
   end
+
+  def test_negation
+    u = Vector.new(1, 2)
+
+    w = neg u;
+
+    assert_equal(-1, w.x)
+    assert_equal(-2, w.y)
+  end
 end
