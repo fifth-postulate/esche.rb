@@ -15,5 +15,5 @@ Be creating good [abstractions][abstraction] and relying on [function compositio
 [host]: https://einarwh.wordpress.com/
 [funcgeo]: https://eprints.soton.ac.uk/257577/1/funcgeo2.pdf
 [abstraction]: https://en.wikipedia.org/wiki/Abstraction
-[wikipedia:function_composition:] https://en.wikipedia.org/wiki/Function_composition
+[wikipedia:function_composition]: https://en.wikipedia.org/wiki/Function_composition
 [square_limit]: https://www.wikiart.org/en/m-c-escher/square-limit
