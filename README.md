@@ -1,5 +1,5 @@
 # esche.rb
-Presentation for the [Amsterdam.rm][] meetup of 17 April.
+Presentation for the [Amsterdam.rb][] meetup of 17 April.
 
 ## Inspiration
 This talk is heavily inspired by the excellent workshop [Escher in Elm][escher-in-elm] by the awesome [Einar Host][host]. His workshop in turn was based on the 1982 classic paper [functional geometry][funcgeo], or at least the revision from 2002.
