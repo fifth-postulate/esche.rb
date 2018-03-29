@@ -1,0 +1,8 @@
+digraph dependencies {
+  Rendering -> Picture -> Shape -> Vector;
+  Rendering -> Mirror -> Shape;
+  Fishy -> Shape;
+  Letter -> Shape;
+  Fitting -> Picture -> Box -> Vector;
+}
+
