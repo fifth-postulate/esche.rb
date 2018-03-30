@@ -1,11 +1,15 @@
 module Shape
-  LineShape = Struct::new(:lineStart, :lineEnd)
+  module Proto
+    BezierShape = Struct::new(:controlPoint1, :controlPoint2, :endPoint)
+  end
 
-  PolygonShape = Struct::new(:points)
+  Line = Struct::new(:lineStart, :lineEnd)
 
-  PolyLineShape = Struct::new(:pts)
+  Polygon = Struct::new(:points)
 
-  CurveShape = Struct::new(:point1, :point2, :point3, :point4)
+  PolyLine = Struct::new(:pts)
 
-  BezierShape = Struct::new(:controlPoint1, :controlPoint2, :endPoint)
+  Curve = Struct::new(:point1, :point2, :point3, :point4)
+
+  Path = Struct::new(:start, :beziers)
 end
