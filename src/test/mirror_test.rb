@@ -21,4 +21,13 @@ class TestMirror < Test::Unit::TestCase
 
     assert_equal(l, Shape::Line::new(Vector::new(1.0, 3.0), Vector::new(3.0, 1.0)))
   end
+
+  def test_mirror_shape_polygon
+    mirror = lambda { |v| mirror_vector(5.0, v) }
+    polygon = Shape::Polygon::new([Vector::new(1.0, 2.0), Vector::new(3.0, 4.0)])
+
+    p = mirror_shape(mirror, polygon)
+
+    assert_equal(p, Shape::Polygon::new([Vector::new(1.0, 3.0), Vector::new(3.0, 1.0)]))
+  end
 end

@@ -9,6 +9,8 @@ end
 def mirror_shape(mirror, shape)
   if shape.instance_of?(Shape::Line)
     Shape::Line::new(mirror.(shape.lineStart), mirror.(shape.lineEnd))
+  elsif shape.instance_of?(Shape::Polygon)
+      Shape::Polygon::new(shape.points.map { |p| mirror.(p) })
   else
     shape
   end
