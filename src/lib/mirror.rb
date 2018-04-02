@@ -13,6 +13,24 @@ def mirror_shape(mirror, shape)
     Shape::Polygon::new(shape.points.map { |p| mirror.(p) })
   elsif shape.instance_of?(Shape::PolyLine)
       Shape::PolyLine::new(shape.pts.map { |p| mirror.(p) })
+  elsif shape.instance_of?(Shape::Curve)
+    Shape::Curve::new(
+      mirror.(shape.point1),
+      mirror.(shape.point2),
+      mirror.(shape.point3),
+      mirror.(shape.point4)
+    )
+  elsif shape.instance_of?(Shape::Path)
+    Shape::Path::new(
+      mirror.(shape.start),
+      shape.beziers.map { |p|
+        Shape::Proto::BezierShape::new(
+          mirror.(p.controlPoint1),
+          mirror.(p.controlPoint2),
+          mirror.(p.endPoint),
+        )
+      }
+    )
   else
     shape
   end

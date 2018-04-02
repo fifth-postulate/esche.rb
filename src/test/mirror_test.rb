@@ -39,4 +39,46 @@ class TestMirror < Test::Unit::TestCase
 
     assert_equal(s, Shape::PolyLine::new([Vector::new(1.0, 3.0), Vector::new(3.0, 1.0)]))
   end
+
+  def test_mirror_shape_curve
+    mirror = lambda { |v| mirror_vector(5.0, v) }
+    shape = Shape::Curve::new(
+      Vector::new(1.0, 2.0),
+      Vector::new(3.0, 4.0),
+      Vector::new(5.0, 6.0),
+      Vector::new(7.0, 8.0)
+    )
+
+    s = mirror_shape(mirror, shape)
+
+    assert_equal(s, Shape::Curve::new(
+                   Vector::new(1.0, 3.0),
+                   Vector::new(3.0, 1.0),
+                   Vector::new(5.0, -1.0),
+                   Vector::new(7.0, -3.0)
+                 ))
+  end
+
+  def test_mirror_shape_path
+    mirror = lambda { |v| mirror_vector(5.0, v) }
+    shape = Shape::Path::new(
+      Vector::new(-1.0, 0.0), [
+        Shape::Proto::BezierShape::new(
+          Vector::new(1.0, 2.0),
+          Vector::new(3.0, 4.0),
+          Vector::new(5.0, 6.0)
+        )
+      ])
+
+    s = mirror_shape(mirror, shape)
+
+    assert_equal(s, Shape::Path::new(
+                   Vector::new(-1.0, 5.0), [
+                     Shape::Proto::BezierShape::new(
+                       Vector::new(1.0, 3.0),
+                       Vector::new(3.0, 1.0),
+                       Vector::new(5.0, -1.0)
+                     )
+                   ]))
+  end
 end
