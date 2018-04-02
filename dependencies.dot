@@ -5,6 +5,7 @@ digraph dependencies {
   Letter -> Shape;
   Fitting -> Picture -> Box -> Vector;
   Main -> Fitting -> Style;
-  Main -> Rendering -> Style;
+  Main -> Rendering;
+  Picture -> Style;
 }
 
