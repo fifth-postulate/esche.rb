@@ -4,5 +4,7 @@ digraph dependencies {
   Fishy -> Shape;
   Letter -> Shape;
   Fitting -> Picture -> Box -> Vector;
+  Main -> Fitting -> Style;
+  Main -> Rendering -> Style;
 }
 
