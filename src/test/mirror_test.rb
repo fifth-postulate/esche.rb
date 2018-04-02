@@ -15,19 +15,28 @@ class TestMirror < Test::Unit::TestCase
 
   def test_mirror_shape_line
     mirror = lambda { |v| mirror_vector(5.0, v) }
-    line = Shape::Line::new(Vector::new(1.0, 2.0), Vector::new(3.0, 4.0))
+    shape = Shape::Line::new(Vector::new(1.0, 2.0), Vector::new(3.0, 4.0))
 
-    l = mirror_shape(mirror, line)
+    s = mirror_shape(mirror, shape)
 
-    assert_equal(l, Shape::Line::new(Vector::new(1.0, 3.0), Vector::new(3.0, 1.0)))
+    assert_equal(s, Shape::Line::new(Vector::new(1.0, 3.0), Vector::new(3.0, 1.0)))
   end
 
   def test_mirror_shape_polygon
     mirror = lambda { |v| mirror_vector(5.0, v) }
-    polygon = Shape::Polygon::new([Vector::new(1.0, 2.0), Vector::new(3.0, 4.0)])
+    shape = Shape::Polygon::new([Vector::new(1.0, 2.0), Vector::new(3.0, 4.0)])
 
-    p = mirror_shape(mirror, polygon)
+    s = mirror_shape(mirror, shape)
 
-    assert_equal(p, Shape::Polygon::new([Vector::new(1.0, 3.0), Vector::new(3.0, 1.0)]))
+    assert_equal(s, Shape::Polygon::new([Vector::new(1.0, 3.0), Vector::new(3.0, 1.0)]))
+  end
+
+  def test_mirror_shape_polyline
+    mirror = lambda { |v| mirror_vector(5.0, v) }
+    shape = Shape::PolyLine::new([Vector::new(1.0, 2.0), Vector::new(3.0, 4.0)])
+
+    s = mirror_shape(mirror, shape)
+
+    assert_equal(s, Shape::PolyLine::new([Vector::new(1.0, 3.0), Vector::new(3.0, 1.0)]))
   end
 end
