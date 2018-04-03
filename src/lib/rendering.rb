@@ -1,4 +1,4 @@
-def to_svg(bounds)
+def to_svg(bounds, rendering)
 	w = bounds[0]
 	h = bounds[1]
 	return <<ENDSVG

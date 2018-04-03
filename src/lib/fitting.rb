@@ -3,11 +3,11 @@ require_relative "box"
 require_relative "style"
 
 def mapper(box)
-  lambda { |v| add(box.a, scale(v.x, box.b), scale(v.y, box.c)) }
+  lambda { |v| add(box.a, add(scale(v.x, box.b), scale(v.y, box.c))) }
 end
 
 def get_stroke_width(box)
-  Math.max(length(box.b), length(box.c)) / 80.0
+  [length(box.b), length(box.c)].max() / 80.0
 end
 
 def get_style(box)
@@ -50,6 +50,6 @@ def create_picture(shapes)
     style = get_style(box)
     shapes
       .map { |shape| map_shape(m, shape)  }
-      .map { |shape| Tuple[shape, style] }
+      .map { |shape| [shape, style] }
   }
 end
