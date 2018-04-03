@@ -17,12 +17,12 @@ end
 
 def inner_d_shape
   points = [
-    Vector::new(0.4, 0.3),
-    Vector::new(0.4, 0.4),
-    Vector::new(0.5, 0.5),
-    Vector::new(0.6, 0.5),
-    Vector::new(0.6, 0.2),
-    Vector::new(0.5, 0.2)
+    Vector::new(0.40, 0.24),
+    Vector::new(0.40, 0.46),
+    Vector::new(0.44, 0.50),
+    Vector::new(0.60, 0.50),
+    Vector::new(0.60, 0.20),
+    Vector::new(0.44, 0.20)
   ]
   Shape::Polygon::new(points)
 end
