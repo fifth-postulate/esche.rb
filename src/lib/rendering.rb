@@ -14,11 +14,15 @@ def to_polyline_element(style, vectors)
 TOPOLYLINE
 end
 
-
 def to_polyline_element(style, v1, v2, v3, v4)
-  coordinates = vectors.map { |v| "#{v.x},#{v.y}" }
   return <<TOCURVE
   <path stroke="black" stroke-width="#{style.stroke_width}" fill="none" d="M#{v1.x} #{v1.y} C #{v2.x} #{v2.y}, #{v3.x} #{v3.y}, #{v4.x} #{v4.y}" />
+TOCURVE
+end
+
+def to_line_element(style, u, v)
+  return <<TOCURVE
+  <line stroke="black" stroke-width="#{style.stroke_width}" fill="none" x1="#{u.x}" y1="#{u.y}" x2="#{v.x}" y2="#{v.y}" />
 TOCURVE
 end
 
@@ -29,13 +33,8 @@ def to_svg_element(style, shape)
     to_polyline_element(style, shape.pts)
   elsif shape.instance_of?(Shape::Curve)
    to_curve_element(style, shape.point1, shape.point2, shape.point3, shape.point4)
-  # elsif shape.instance_of?(Shape::Curve)
-  #   Shape::Curve::new(
-  #     m.(shape.point1),
-  #     m.(shape.point2),
-  #     m.(shape.point3),
-  #     m.(shape.point4)
-  #   )
+  elsif shape.instance_of?(Shape::Line)
+    to_line_element(style, shape.lineStart, shape.lineEnd)
   # elsif shape.instance_of?(Shape::Path)
   #   Shape::Path::new(
   #     m.(shape.start),
