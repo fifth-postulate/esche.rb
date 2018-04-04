@@ -10,3 +10,6 @@
 ---
 
 ![Letter d](image/d.svg)
+---
+
+![Fish](image/fish.svg)
