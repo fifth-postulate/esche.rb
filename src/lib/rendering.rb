@@ -26,6 +26,13 @@ def to_line_element(style, u, v)
 TOCURVE
 end
 
+def to_path_element(style, start, controls)
+  segments = controls.map { |b| "C #{b.controlPoint1.x} #{b.controlPoint1.y}, #{b.controlPoint2.x} #{b.controlPoint2.y}, #{b.endPoint.x} #{b.endPoint.y}" }
+  return <<TOPATH
+  <path stroke="black" stroke-width="#{style.stroke_width}" fill="none" d="M#{start.x} #{start.y} #{segments.join(" ")}" />
+TOPATH
+end
+
 def to_svg_element(style, shape)
   if shape.instance_of?(Shape::Polygon)
     to_polygon_element(style, shape.points)
@@ -35,17 +42,8 @@ def to_svg_element(style, shape)
    to_curve_element(style, shape.point1, shape.point2, shape.point3, shape.point4)
   elsif shape.instance_of?(Shape::Line)
     to_line_element(style, shape.lineStart, shape.lineEnd)
-  # elsif shape.instance_of?(Shape::Path)
-  #   Shape::Path::new(
-  #     m.(shape.start),
-  #     shape.beziers.map { |p|
-  #       Shape::Proto::BezierShape::new(
-  #         m.(p.controlPoint1),
-  #         m.(p.controlPoint2),
-  #         m.(p.endPoint),
-  #       )
-  #     }
-  #   )
+  elsif shape.instance_of?(Shape::Path)
+    to_path_element(style, shape.start, shape.beziers)
   else
     return <<ENDPART
   <text></text>
