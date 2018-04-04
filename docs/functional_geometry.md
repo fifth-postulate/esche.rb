@@ -6,3 +6,7 @@
 ---
 
 ![Square Limit; Escher](image/square-limit.jpg)
+
+---
+
+![Letter d](image/d.svg)
