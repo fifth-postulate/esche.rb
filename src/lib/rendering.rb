@@ -14,7 +14,7 @@ def to_polyline_element(style, vectors)
 TOPOLYLINE
 end
 
-def to_polyline_element(style, v1, v2, v3, v4)
+def to_curve_element(style, v1, v2, v3, v4)
   return <<TOCURVE
   <path stroke="black" stroke-width="#{style.stroke_width}" fill="none" d="M#{v1.x} #{v1.y} C #{v2.x} #{v2.y}, #{v3.x} #{v3.y}, #{v4.x} #{v4.y}" />
 TOCURVE
