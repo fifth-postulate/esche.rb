@@ -7,11 +7,19 @@ def to_polygon_element(style, vectors)
 TOPOLYGON
 end
 
+def to_polyline_element(style, vectors)
+  coordinates = vectors.map { |v| "#{v.x},#{v.y}" }
+  return <<TOPOLYLINE
+  <polyline stroke="black" stroke-width="#{style.stroke_width}" fill="none" points="#{coordinates.join(" ")}" />
+TOPOLYLINE
+end
+
+
 def to_svg_element(style, shape)
   if shape.instance_of?(Shape::Polygon)
     to_polygon_element(style, shape.points)
-  # elsif shape.instance_of?(Shape::Polygon)
-  #   Shape::Polygon::new(shape.points.map { |p| m.(p) })
+  elsif shape.instance_of?(Shape::PolyLine)
+    to_polyline_element(style, shape.pts)
   # elsif shape.instance_of?(Shape::PolyLine)
   #   Shape::PolyLine::new(shape.pts.map { |p| m.(p) })
   # elsif shape.instance_of?(Shape::Curve)
