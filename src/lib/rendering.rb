@@ -15,13 +15,20 @@ TOPOLYLINE
 end
 
 
+def to_polyline_element(style, v1, v2, v3, v4)
+  coordinates = vectors.map { |v| "#{v.x},#{v.y}" }
+  return <<TOCURVE
+  <path stroke="black" stroke-width="#{style.stroke_width}" fill="none" d="M#{v1.x} #{v1.y} C #{v2.x} #{v2.y}, #{v3.x} #{v3.y}, #{v4.x} #{v4.y}" />
+TOCURVE
+end
+
 def to_svg_element(style, shape)
   if shape.instance_of?(Shape::Polygon)
     to_polygon_element(style, shape.points)
   elsif shape.instance_of?(Shape::PolyLine)
     to_polyline_element(style, shape.pts)
-  # elsif shape.instance_of?(Shape::PolyLine)
-  #   Shape::PolyLine::new(shape.pts.map { |p| m.(p) })
+  elsif shape.instance_of?(Shape::Curve)
+   to_curve_element(style, shape.point1, shape.point2, shape.point3, shape.point4)
   # elsif shape.instance_of?(Shape::Curve)
   #   Shape::Curve::new(
   #     m.(shape.point1),
