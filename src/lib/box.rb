@@ -65,7 +65,7 @@ def scale_horizontally(factor, box)
 end
 
 def split_horizontally(factor, box)
-  right = scale_horizontally(factor, move_horizontally(1.0 - factor, box))
-  left = scale_horizontally(1.0 - factor, box)
+  right = scale_horizontally(1.0 - factor, move_horizontally(factor, box))
+  left = scale_horizontally(factor, box)
   return left, right
 end

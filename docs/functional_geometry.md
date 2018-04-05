@@ -45,4 +45,9 @@
 ---
 
 .geometry[
+![quartet of ds](image/d_nonet.svg)]
+
+---
+
+.geometry[
 ![Fish](image/fish.svg)]
