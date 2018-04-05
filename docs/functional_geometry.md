@@ -45,15 +45,24 @@
 ---
 
 .geometry[
-![quartet of ds](image/d_nonet.svg)]
+![nonet of ds](image/d_nonet.svg)]
 
 ---
 
 .geometry[
-![quartet of ds](image/fish_over.svg)]
+![fish over double turned fish](image/fish_over.svg)]
 
 ---
 
 .geometry[
-![quartet of ds](image/fish_ttile.svg)]
+![ttile of fish](image/fish_ttile.svg)]
 
+---
+
+.geometry[
+![utile of fish](image/fish_utile.svg)]
+
+---
+
+.geometry[
+![side_1 of fish](image/fish_side.svg)]
