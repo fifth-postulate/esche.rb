@@ -66,3 +66,8 @@
 
 .geometry[
 ![side_1 of fish](image/fish_side.svg)]
+
+---
+
+.geometry[
+![corner_1 of fish](image/fish_corner.svg)]

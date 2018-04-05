@@ -100,3 +100,16 @@ def side(n, p)
     quartet(nw, ne, sw, se)
   end
 end
+
+def corner(n, p)
+  if n == 0 then
+    blank()
+  else
+    nw = corner(n - 1, p)
+    ne = side(n - 1, p)
+    sw = turn(ne)
+    se = utile(p)
+
+    quartet(nw, ne, sw, se)
+  end
+end
