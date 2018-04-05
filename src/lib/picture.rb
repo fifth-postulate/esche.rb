@@ -50,3 +50,7 @@ end
 def beside (pm, pn)
   beside_ratio(1, 1, pm, pn)
 end
+
+def quartet(nw, ne, sw, se)
+  above(beside(nw, ne), beside(sw, se))
+end

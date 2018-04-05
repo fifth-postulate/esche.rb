@@ -13,5 +13,5 @@ box = Box.new(
 	)
 shapes = Letter::D
 d = create_picture(shapes)
-picture = beside(d, flip(d))
+picture = quartet(d, flip(d), flip(turn(turn(d))), turn(turn(d)))
 puts to_svg([400, 400], picture.(box))
