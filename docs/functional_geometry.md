@@ -9,7 +9,9 @@
 
 ---
 
-![Letter d](image/d.svg)
+.geometry[
+![Letter d](image/d.svg)]
+
 ---
 
 ![Fish](image/fish.svg)
