@@ -29,4 +29,10 @@
 
 ---
 
-![Fish](image/fish.svg)
+.geometry[
+![Letter d above flipped letter d](image/d_above.svg)]
+
+---
+
+.geometry[
+![Fish](image/fish.svg)]

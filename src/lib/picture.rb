@@ -26,3 +26,15 @@ def toss(picture)
     picture.(b)
   }
 end
+
+def above_ratio(m, n, pm, pn)
+  lambda { |box|
+    factor = m.to_f() / (m + n).to_f()
+    boxm, boxn = split_vertically(factor, box)
+    pm.(boxm) + pn.(boxn)
+  }
+end
+
+def above (pm, pn)
+  above_ratio(1, 1, pm, pn)
+end

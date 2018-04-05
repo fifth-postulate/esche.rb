@@ -25,3 +25,25 @@ def toss_box(box)
     scale(0.5, sub(box.c, box.b))
   )
 end
+
+def move_vertically(factor, box)
+  Box.new(
+    add(box.a, scale(factor, box.c)),
+    box.b,
+    box.c
+  )
+end
+
+def scale_vertically(factor, box)
+  Box.new(
+    box.a,
+    box.b,
+    scale(factor, box.c)
+  )
+end
+
+def split_vertically(factor, box)
+  top = scale_vertically(factor, move_vertically(1.0 - factor, box))
+  bottom = scale_vertically(1.0 - factor, box)
+  return top, bottom
+end
