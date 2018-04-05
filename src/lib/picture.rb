@@ -66,3 +66,9 @@ end
 def nonet(nw, nm, ne, mw, mm, me, sw, sm, se)
   column(row(nw, nm, ne), row(mw, mm, me), row(sw, sm, se))
 end
+
+def over(p, q)
+  lambda { |box|
+    p.(box) + q.(box)
+  }
+end

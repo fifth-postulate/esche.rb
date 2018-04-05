@@ -11,7 +11,7 @@ box = Box.new(
 	Vector.new(250.0, 0.0),
 	Vector.new(0.0, 250.0)
 	)
-shapes = Letter::D
-d = create_picture(shapes)
-picture = nonet(d, flip(d), flip(turn(turn(d))), turn(turn(d)), d, flip(d), flip(turn(turn(d))), turn(turn(d)), d)
+shapes = Figure::Fish
+fish = create_picture(shapes)
+picture = over(fish, turn(turn(fish)))
 puts to_svg([400, 400], picture.(box))
