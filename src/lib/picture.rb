@@ -38,3 +38,15 @@ end
 def above (pm, pn)
   above_ratio(1, 1, pm, pn)
 end
+
+def beside_ratio(m, n, pm, pn)
+  lambda { |box|
+    factor = m.to_f() / (m + n).to_f()
+    boxm, boxn = split_horizontally(factor, box)
+    pm.(boxm) + pn.(boxn)
+  }
+end
+
+def beside (pm, pn)
+  beside_ratio(1, 1, pm, pn)
+end

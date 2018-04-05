@@ -47,3 +47,25 @@ def split_vertically(factor, box)
   bottom = scale_vertically(1.0 - factor, box)
   return top, bottom
 end
+
+def move_horizontally(factor, box)
+  Box.new(
+    add(box.a, scale(factor, box.b)),
+    box.b,
+    box.c
+  )
+end
+
+def scale_horizontally(factor, box)
+  Box.new(
+    box.a,
+    scale(factor, box.b),
+    box.c
+  )
+end
+
+def split_horizontally(factor, box)
+  right = scale_horizontally(factor, move_horizontally(1.0 - factor, box))
+  left = scale_horizontally(1.0 - factor, box)
+  return left, right
+end

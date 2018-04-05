@@ -35,4 +35,9 @@
 ---
 
 .geometry[
+![Letter d beside flipped letter d](image/d_beside.svg)]
+
+---
+
+.geometry[
 ![Fish](image/fish.svg)]

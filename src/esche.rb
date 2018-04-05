@@ -13,5 +13,5 @@ box = Box.new(
 	)
 shapes = Letter::D
 d = create_picture(shapes)
-picture = above(d, flip(d))
+picture = beside(d, flip(d))
 puts to_svg([400, 400], picture.(box))
