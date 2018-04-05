@@ -19,3 +19,10 @@ def flip(picture)
     picture.(b)
   }
 end
+
+def toss(picture)
+  lambda { |box|
+    b = toss_box(box)
+    picture.(b)
+  }
+end

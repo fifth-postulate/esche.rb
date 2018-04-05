@@ -24,4 +24,9 @@
 
 ---
 
+.geometry[
+![Letter d tossed](image/d_toss.svg)]
+
+---
+
 ![Fish](image/fish.svg)

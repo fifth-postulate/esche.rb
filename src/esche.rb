@@ -12,5 +12,5 @@ box = Box.new(
 	Vector.new(0.0, 250.0)
 	)
 shapes = Letter::D
-picture = flip(create_picture(shapes))
+picture = toss(create_picture(shapes))
 puts to_svg([400, 400], picture.(box))

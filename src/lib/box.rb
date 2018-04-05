@@ -17,3 +17,11 @@ def flip_box(box)
     box.c
   )
 end
+
+def toss_box(box)
+  Box.new(
+    add(box.a, scale(0.5, add(box.b, box.c))),
+    scale(0.5, add(box.b, box.c)),
+    scale(0.5, sub(box.c, box.b))
+  )
+end
