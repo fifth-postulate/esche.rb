@@ -55,4 +55,5 @@
 ---
 
 .geometry[
-![Fish](image/fish.svg)]
+![quartet of ds](image/fish_ttile.svg)]
+

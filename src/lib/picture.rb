@@ -72,3 +72,8 @@ def over(p, q)
     p.(box) + q.(box)
   }
 end
+
+def ttile(p)
+  f = flip(toss(p))
+  over(p, over(f,turn(turn(turn(f)))))
+end

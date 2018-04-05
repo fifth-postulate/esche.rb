@@ -13,5 +13,5 @@ box = Box.new(
 	)
 shapes = Figure::Fish
 fish = create_picture(shapes)
-picture = over(fish, turn(turn(fish)))
+picture = ttile(fish)
 puts to_svg([400, 400], picture.(box))
