@@ -9,3 +9,11 @@ def turn_box(box)
     neg(box.b)
   )
 end
+
+def flip_box(box)
+  Box.new(
+    add(box.a, box.b),
+    neg(box.b),
+    box.c
+  )
+end

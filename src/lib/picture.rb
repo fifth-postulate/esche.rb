@@ -12,3 +12,10 @@ def turn(picture)
     picture.(b)
   }
 end
+
+def flip(picture)
+  lambda { |box|
+    b = flip_box(box)
+    picture.(b)
+  }
+end
