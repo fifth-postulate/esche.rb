@@ -14,4 +14,9 @@
 
 ---
 
+.geometry[
+![Letter d turned](image/d_turn.svg)]
+
+---
+
 ![Fish](image/fish.svg)
