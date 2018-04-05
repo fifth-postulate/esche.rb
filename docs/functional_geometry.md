@@ -70,4 +70,9 @@
 ---
 
 .geometry[
-![corner_1 of fish](image/fish_corner.svg)]
+![corner_2 of fish](image/fish_corner.svg)]
+
+---
+
+.geometry[
+![limit_2 of fish](image/fish_limit.svg)]

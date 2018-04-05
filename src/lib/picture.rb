@@ -113,3 +113,23 @@ def corner(n, p)
     quartet(nw, ne, sw, se)
   end
 end
+
+def square_limit(n, p)
+  if n == 0 then
+    blank()
+  else
+    nm = side(n - 1, p)
+    mw = turn(nm)
+    sm = turn(mw)
+    me = turn(sm)
+
+    nw = corner(n - 1, p)
+    sw = turn(nw)
+    se = turn(sw)
+    ne = turn(se)
+
+    mm = utile(p)
+
+    nonet(nw, nm, ne, mw, mm, me, sw, sm, se)
+  end
+end
