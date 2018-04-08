@@ -1,9 +1,16 @@
 # Esche.rb
 ## Amsterdam.rb
 ## 17 April
+
 ---
 
 ![Hand with reflecting sphere; Escher](image/hand-with-reflecting-sphere.jpg)
+
+???
+
+* Maurits Cornelis Escher
+* 17 June 1898 – 27 March 1972
+
 ---
 
 ![Square Limit; Escher](image/square-limit.jpg)
