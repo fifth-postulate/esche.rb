@@ -22,6 +22,15 @@
 
 ---
 
+![Grid Method](image/grid-method.jpg)
+
+???
+
+* Grid Method
+* Transform Grid
+
+---
+
 .geometry[
 ![Letter d](image/d.svg)]
 
