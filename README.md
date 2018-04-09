@@ -14,6 +14,19 @@ Below is an image of the dependencies between different files.
 
 ![Dependencies between different files](http://fifth-postulate.nl/esche.rb/image/dependencies.png)
 
+## Development
+### Presentation
+The presentation is defined in the Markdown file `functional_geometry.md` in the
+`docs` directory. 
+
+To view the presentation got to the `docs` directory and run a HTTP server
+
+```shell
+python -m SimpleHTTPServer
+```
+
+Open [localhost:8000](http://localhost:8000).
+
 [presentation]: http://fifth-postulate.nl/esche.rb/
 [Amsterdam.rb]: http://amsrb.org/
 [escher-in-elm]: https://github.com/einarwh/escher-workshop
