@@ -15,6 +15,11 @@
 
 ![Square Limit; Escher](image/square-limit.jpg)
 
+???
+
+* Square Limit
+* 1964
+
 ---
 
 .geometry[
