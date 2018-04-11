@@ -25,6 +25,13 @@ To view the presentation got to the `docs` directory and run a HTTP server
 python -m SimpleHTTPServer
 ```
 
+### Picture
+To create a picture describe it in `escher.rb` and run
+
+```shell
+ruby escher.rb > ../image/<INSERT NAME>.svg
+```
+
 Open [localhost:8000](http://localhost:8000).
 
 [presentation]: http://fifth-postulate.nl/esche.rb/
