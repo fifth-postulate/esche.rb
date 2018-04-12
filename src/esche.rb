@@ -11,7 +11,7 @@ box = Box.new(
 	Vector.new(250.0, 0.0),
 	Vector.new(0.0, 250.0)
 	)
-shapes = Figure::Fish
-fish = create_picture(shapes)
-picture = square_limit(2, fish)
+shapes = Letter::D
+d = create_picture(shapes)
+picture = above_ratio(1, 4, d, turn(d))
 puts to_svg([400, 400], picture.(box))

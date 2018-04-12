@@ -170,6 +170,28 @@ end
 ---
 
 .geometry[
+![Letter d above flipped letter d](image/d_above.02.svg)]
+
+--
+
+```ruby
+def above_ratio(m, n, pm, pn)
+  lambda { |box|
+    factor = m.to_f() / (m + n).to_f()
+    boxm, boxn = split_vertically(factor, box)
+    pm.(boxm) + pn.(boxn)
+  }
+end
+```
+
+???
+
+**Rendering** List (Shape, Style**
+**Picture** Box -> Rendering
+
+---
+
+.geometry[
 ![Letter d beside flipped letter d](image/d_beside.svg)]
 
 ---
