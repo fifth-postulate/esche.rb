@@ -85,6 +85,32 @@ end
 .geometry[
 ![Letter d flipped](image/d_flip.svg)]
 
+???
+
+* Flip
+
+---
+
+.geometry[
+![a box flipped](image/box_flip.svg)]
+
+???
+
+* Flip the box
+* How?
+
+--
+
+```ruby
+def flip_box(box)
+  Box.new(
+    add(box.a, box.b),
+    neg(box.b),
+    box.c
+  )
+end
+```
+
 ---
 
 .geometry[
