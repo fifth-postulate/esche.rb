@@ -90,6 +90,8 @@ def show_box(bounds, box)
     <line x1="0" y1="0" x2="#{b.a.x}" y2="#{b.a.y}" stroke="red" marker-end="url(#red-triangle)" />
     <line x1="#{b.a.x}" y1="#{b.a.y}" x2="#{b.b.x + b.a.x}" y2="#{b.b.y + b.a.y}" stroke="orange" marker-end="url(#orange-triangle)"  />
     <line x1="#{b.a.x}" y1="#{b.a.y}" x2="#{b.c.x + b.a.x}" y2="#{b.c.y + b.a.y}" stroke="purple" marker-end="url(#purple-triangle)"  />
+    <line x1="#{b.b.x + b.a.x}" y1="#{b.b.y + b.a.y}" x2="#{b.a.x + b.b.x + b.c.x}" y2="#{b.a.y + b.b.y + b.c.y}" stroke="gray" stroke-dasharray="3,6"/>
+    <line x1="#{b.c.x + b.a.x}" y1="#{b.c.y + b.a.y}" x2="#{b.a.x + b.b.x + b.c.x}" y2="#{b.a.y + b.b.y + b.c.y}" stroke="gray" stroke-dasharray="3,6"/>
   </g>
 </svg>
 ENDBOX
