@@ -34,15 +34,51 @@
 .geometry[
 ![a box](image/box.svg)]
 
+--
+
+```ruby
+Box = Struct.new(:a, :b, :c)
+```
+
 ---
 
 .geometry[
 ![Letter d](image/d.svg)]
 
+???
+
+* No symmetries. d, b, p, q all different
+
 ---
 
 .geometry[
 ![Letter d turned](image/d_turn.svg)]
+
+???
+
+* Turn
+
+---
+
+.geometry[
+![a box turned](image/box_turn.svg)]
+
+???
+
+* Turn the box
+* How?
+
+--
+
+```ruby
+def turn_box(box)
+  Box.new(
+    add(box.a, box.b),
+    box.c,
+    neg(box.b)
+  )
+end
+```
 
 ---
 
