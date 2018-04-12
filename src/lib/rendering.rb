@@ -66,3 +66,20 @@ def to_svg(bounds, rendering)
 </svg>
 ENDSVG
 end
+
+
+def show_box(bounds, box)
+  w = bounds[0]
+  h = bounds[1]
+  b = box
+  #Box::new(mirror_vector(h, box.a), mirror_vector(h, box.b), mirror_vector(h, box.c))
+  return <<ENDBOX
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 #{w} #{h}">
+  <g transform="scale(1,-1), translate(0, -#{h})">
+    <line x1="0" y1="0" x2="#{b.a.x}" y2="#{b.a.y}" stroke="red" />
+    <line x1="#{b.a.x}" y1="#{b.a.y}" x2="#{b.b.x + b.a.x}" y2="#{b.b.y + b.a.y}" stroke="orange" />
+    <line x1="#{b.a.x}" y1="#{b.a.y}" x2="#{b.c.x + b.a.x}" y2="#{b.c.y + b.a.y}" stroke="purple" />
+  </g>
+</svg>
+ENDBOX
+end

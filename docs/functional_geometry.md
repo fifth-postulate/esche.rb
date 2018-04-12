@@ -32,6 +32,11 @@
 ---
 
 .geometry[
+![a box](image/box.svg)]
+
+---
+
+.geometry[
 ![Letter d](image/d.svg)]
 
 ---

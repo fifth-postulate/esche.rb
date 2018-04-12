@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 400 400">
+  <g transform="scale(1,-1), translate(0, -400)">
+    <line x1="0" y1="0" x2="75.0" y2="75.0" stroke="red" />
+    <line x1="75.0" y1="75.0" x2="325.0" y2="75.0" stroke="orange" />
+    <line x1="75.0" y1="75.0" x2="75.0" y2="325.0" stroke="purple" />
+  </g>
+</svg>
