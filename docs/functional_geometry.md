@@ -116,6 +116,32 @@ end
 .geometry[
 ![Letter d tossed](image/d_toss.svg)]
 
+???
+
+* Toss
+
+---
+
+.geometry[
+![a box tossed](image/box_toss.svg)]
+
+???
+
+* Toss the box
+* How?
+
+--
+
+```ruby
+def toss_box(box)
+  Box.new(
+    add(box.a, scale(0.5, add(box.b, box.c))),
+    scale(0.5, add(box.b, box.c)),
+    scale(0.5, sub(box.c, box.b))
+  )
+end
+```
+
 ---
 
 .geometry[
