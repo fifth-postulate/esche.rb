@@ -155,6 +155,21 @@ end
 ---
 
 .geometry[
+![stacked boxes](image/box_scaled.svg)]
+
+---
+
+.geometry[
+![stacked boxes](image/box_moved_scaled.svg)]
+
+---
+
+.geometry[
+![stacked boxes](image/box_split_vertically.02.svg)]
+
+---
+
+.geometry[
 ![Letter d beside flipped letter d](image/d_beside.svg)]
 
 ---

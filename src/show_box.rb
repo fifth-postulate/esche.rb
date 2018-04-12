@@ -7,5 +7,6 @@ box = Box.new(
 	Vector.new(250.0, 0.0),
 	Vector.new(0.0, 250.0)
 )
-top, bottom = split_vertically(0.5, box)
-puts show_box([400, 400], [top, bottom])
+top, bottom = split_vertically(0.2, box)
+boxes = [top, bottom]
+puts show_box([400, 400], boxes)
