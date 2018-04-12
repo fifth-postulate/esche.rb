@@ -194,6 +194,14 @@ end
 .geometry[
 ![Letter d beside flipped letter d](image/d_beside.svg)]
 
+--
+
+```ruby
+def beside (pm, pn)
+  beside_ratio(1, 1, pm, pn)
+end
+```
+
 ---
 
 .geometry[
