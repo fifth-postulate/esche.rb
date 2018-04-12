@@ -150,6 +150,11 @@ end
 ---
 
 .geometry[
+![stacked boxes](image/box_split_vertically.svg)]
+
+---
+
+.geometry[
 ![Letter d beside flipped letter d](image/d_beside.svg)]
 
 ---
