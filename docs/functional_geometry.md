@@ -213,11 +213,35 @@ end
 .geometry[
 ![quartet of ds](image/d_quartet.svg)]
 
+--
+
+```ruby
+def quartet(nw, ne, sw, se)
+  above(beside(nw, ne), beside(sw, se))
+end
+```
 
 ---
 
 .geometry[
 ![nonet of ds](image/d_nonet.svg)]
+
+
+---
+
+```ruby
+def row(w, m, e)
+  beside_ratio(1, 2, w, beside(m, e))
+end
+
+def column(n, m, s)
+  above_ratio(1, 2, n, above(m, s))
+end
+
+def nonet(nw, nm, ne, mw, mm, me, sw, sm, se)
+  column(row(nw, nm, ne), row(mw, mm, me), row(sw, sm, se))
+end
+```
 
 ---
 
