@@ -172,7 +172,18 @@ end
 .geometry[
 ![Letter d above flipped letter d](image/d_above.02.svg)]
 
---
+---
+
+```elm
+Picture : Box -> List Shape
+```
+
+???
+
+* Little white lie
+* Picture : Box -> List (Shape, Style)
+
+---
 
 ```ruby
 def above_ratio(m, n, pm, pn)
@@ -183,11 +194,6 @@ def above_ratio(m, n, pm, pn)
   }
 end
 ```
-
-???
-
-**Rendering** List (Shape, Style**
-**Picture** Box -> Rendering
 
 ---
 
@@ -206,6 +212,7 @@ end
 
 .geometry[
 ![quartet of ds](image/d_quartet.svg)]
+
 
 ---
 
