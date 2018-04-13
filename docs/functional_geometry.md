@@ -359,7 +359,7 @@ end
 ---
 
 .geometry[
-![limit_2 of fish](image/fish_limit.svg)]
+![limit_4 of fish](image/fish_limit.svg)]
 
 ---
 

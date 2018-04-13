@@ -13,5 +13,5 @@ box = Box.new(
 	)
 shapes = Figure::Fish
 p = create_picture(shapes)
-picture = side(2, p)
+picture = square_limit(4, p)
 puts to_svg([400, 400], picture.(box))
