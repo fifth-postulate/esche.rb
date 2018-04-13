@@ -172,7 +172,7 @@ end
 .geometry[
 ![Letter d above flipped letter d](image/d_above.02.svg)]
 
----
+--
 
 ```elm
 Picture : Box -> List Shape
