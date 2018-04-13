@@ -273,6 +273,15 @@ end
 .geometry[
 ![ttile of fish](image/fish_ttile.svg)]
 
+--
+
+```ruby
+def ttile(p)
+  f = flip(toss(p))
+  over(p, over(f,turn(turn(turn(f)))))
+end
+```
+
 ---
 
 .geometry[
