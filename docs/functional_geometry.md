@@ -305,6 +305,11 @@ end
 ---
 
 .geometry[
+![side_2 of fish](image/fish_side.02.svg)]
+
+---
+
+.geometry[
 ![corner_2 of fish](image/fish_corner.svg)]
 
 ---
