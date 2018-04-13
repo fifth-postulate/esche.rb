@@ -245,6 +245,15 @@ end
 
 ---
 
+## How to draw an owl?
+
+---
+
+.geometry[
+![Escher's fish](image/fish.svg)]
+
+---
+
 .geometry[
 ![fish over double turned fish](image/fish_over.svg)]
 
