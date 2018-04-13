@@ -314,6 +314,23 @@ end
 
 ---
 
+```ruby
+def side(n, p)
+  if n == 0 then
+    blank()
+  else
+    se = ttile(p)
+    sw = turn(se)
+    ne = side(n - 1, p)
+    nw = ne
+
+    quartet(nw, ne, sw, se)
+  end
+end
+```
+
+---
+
 .geometry[
 ![corner_2 of fish](image/fish_corner.svg)]
 
