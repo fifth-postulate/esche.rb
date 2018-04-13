@@ -257,6 +257,17 @@ end
 .geometry[
 ![fish over double turned fish](image/fish_over.svg)]
 
+--
+
+```ruby
+
+def over(p, q)
+  lambda { |box|
+    p.(box) + q.(box)
+  }
+end
+```
+
 ---
 
 .geometry[
