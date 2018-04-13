@@ -287,6 +287,16 @@ end
 .geometry[
 ![utile of fish](image/fish_utile.svg)]
 
+--
+
+```ruby
+def utile(p)
+  f = flip(toss(p))
+  g = over(f, turn(f))
+  over(g, turn(turn(g)))
+end
+```
+
 ---
 
 .geometry[
