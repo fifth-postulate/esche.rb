@@ -245,7 +245,7 @@ end
 
 ---
 
-## How to draw an owl?
+![How to draw an owl?](image/owl.jpg)
 
 ---
 
