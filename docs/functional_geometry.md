@@ -363,6 +363,30 @@ end
 
 ---
 
+```ruby
+def square_limit(n, p)
+  if n == 0 then
+    blank()
+  else
+    nm = side(n - 1, p)
+    mw = turn(nm)
+    sm = turn(mw)
+    me = turn(sm)
+
+    nw = corner(n - 1, p)
+    sw = turn(nw)
+    se = turn(sw)
+    ne = turn(se)
+
+    mm = utile(p)
+
+    nonet(nw, nm, ne, mw, mm, me, sw, sm, se)
+  end
+end
+```
+
+---
+
 ## Attributions
 
 * Hand with reflecting sphere: [https://www.wikiart.org](https://www.wikiart.org/en/Search/hand%20with%20reflecting%20sphere)
