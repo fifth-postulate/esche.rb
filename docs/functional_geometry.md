@@ -63,6 +63,9 @@ Box = Struct.new(:a, :b, :c)
 .geometry[
 ![a box turned](image/box_turn.svg)]
 
+.small.geometry[
+![A reference box](image/box.small.svg)]
+
 ???
 
 * Turn the box
@@ -93,6 +96,10 @@ end
 
 .geometry[
 ![a box flipped](image/box_flip.svg)]
+
+.small.geometry[
+![A reference box](image/box.small.svg)]
+
 
 ???
 
@@ -125,6 +132,9 @@ end
 .geometry[
 ![a box tossed](image/box_toss.svg)]
 
+.small.geometry[
+![A reference box](image/box.small.svg)]
+
 ???
 
 * Toss the box
@@ -152,20 +162,33 @@ end
 .geometry[
 ![stacked boxes](image/box_split_vertically.svg)]
 
+.small.geometry[
+![A reference box](image/box.small.svg)]
+
 ---
 
 .geometry[
 ![stacked boxes](image/box_scaled.svg)]
+
+.small.geometry[
+![A reference box](image/box.small.svg)]
+
 
 ---
 
 .geometry[
 ![stacked boxes](image/box_moved_scaled.svg)]
 
+.small.geometry[
+![A reference box](image/box.small.svg)]
+
 ---
 
 .geometry[
 ![stacked boxes](image/box_split_vertically.02.svg)]
+
+.small.geometry[
+![A reference box](image/box.small.svg)]
 
 ---
 
