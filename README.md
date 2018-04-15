@@ -25,6 +25,8 @@ To view the presentation got to the `docs` directory and run a HTTP server
 python -m SimpleHTTPServer
 ```
 
+Open [localhost:8000](http://localhost:8000).
+
 ### Picture
 To create a picture describe it in `escher.rb` and run
 
@@ -32,7 +34,11 @@ To create a picture describe it in `escher.rb` and run
 ruby escher.rb > ../image/<INSERT NAME>.svg
 ```
 
-Open [localhost:8000](http://localhost:8000).
+To show a box, do the same, but in `show_box.rb`, running
+
+```shell
+ruby show_box.rb > ../image<INSERT NAME>.svg
+```
 
 [presentation]: http://fifth-postulate.nl/esche.rb/
 [Amsterdam.rb]: http://amsrb.org/
