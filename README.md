@@ -25,7 +25,7 @@ To view the presentation got to the `docs` directory and run a HTTP server
 python -m SimpleHTTPServer
 ```
 
-Open [localhost:8000](http://localhost:8000).
+Open [localhost:8000](http://localhost:8000). Or it can be viewed [online](presentation).
 
 ### Picture
 To create a picture describe it in `escher.rb` and run
@@ -48,3 +48,4 @@ ruby show_box.rb > ../image<INSERT NAME>.svg
 [abstraction]: https://en.wikipedia.org/wiki/Abstraction
 [wikipedia:function_composition]: https://en.wikipedia.org/wiki/Function_composition
 [square_limit]: https://www.wikiart.org/en/m-c-escher/square-limit
+[presentation]: http://fifth-postulate.nl/esche.rb/
