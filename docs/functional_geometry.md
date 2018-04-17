@@ -389,6 +389,10 @@ end
 .geometry[
 ![limit_4 of fish](image/fish_limit.svg)]
 
+???
+
+* Fourth order limit
+
 ---
 
 ```ruby
