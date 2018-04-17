@@ -421,3 +421,4 @@ end
 * Grid Method: [https://www.art-is-fun.com](https://www.art-is-fun.com/grid-method)
 * Escher in Elm: [https://github.com/einarwh/escher-workshop](https://github.com/einarwh/escher-workshop)
 * Functional Geometry: [https://eprints.soton.ac.uk/257577/1/funcgeo2.pdf](https://eprints.soton.ac.uk/257577/1/funcgeo2.pdf)
+* Code and Presentation: [https://github.com/fifth-postulate/esche.rb](https://github.com/fifth-postulate/esche.rb)
