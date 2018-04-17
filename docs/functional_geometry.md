@@ -419,6 +419,15 @@ end
 
 ---
 
+.geometry[
+![Penrose Triangle](image/penrose-triangle.png)]
+
+???
+
+* Moral: What seems impossible does not have to be impossible
+
+---
+
 ## Attributions
 
 * Hand with reflecting sphere: [https://www.wikiart.org](https://www.wikiart.org/en/Search/hand%20with%20reflecting%20sphere)
