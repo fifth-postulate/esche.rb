@@ -291,6 +291,11 @@ def over(p, q)
 end
 ```
 
+???
+
+* Remember `Picture : Box -> List Shape`
+
+
 ---
 
 .geometry[
